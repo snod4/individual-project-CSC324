@@ -1,0 +1,7 @@
+class Dice
+
+  def new
+    @dice_number = rand(3..12)
+    @dice_roll = rand(1 .. @dice_number)
+  
+end

@@ -1,5 +1,8 @@
 <h1>Homepage#home</h1>
-<p><% randomFaces = rand(3 .. 12)
-      randomRoll = rand(1 .. randomFaces)
+<p><%
+     randomFaces = @faceNum
+     randomRoll = @diceRoll
+      
+      
      %><%= "This is the #{randomFaces}-sided dice. Once rolled, you get: #{randomRoll}"%></p>
 
