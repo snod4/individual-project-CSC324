@@ -1,0 +1,12 @@
+<h1>Projects</h1>
+<div id = "container">
+<ul id = "project-ul"><% @projects.each do |data|%>
+  <li id = "project-list">
+   <div id = "list-container">
+   <h3><%="#{data.name} -- #{data.date}"%></h3>
+   <p><%= data.description %></p>
+   </div>
+  </li>
+  <% end %>
+</ul>
+</div>

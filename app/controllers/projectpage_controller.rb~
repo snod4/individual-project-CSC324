@@ -1,0 +1,4 @@
+class ProjectpageController < ApplicationController
+  def projects
+  end
+end
