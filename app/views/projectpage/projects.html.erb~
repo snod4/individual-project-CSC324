@@ -1,0 +1,8 @@
+<h1>Projectpage#projects</h1>
+<ul><% @projects.each do |data|%>
+  <li>
+   <p><%="#{data.name} -- #{data.date}"></p>
+    <p><%= data.description %></p>
+  </li>
+  <% end %>
+</ul>
