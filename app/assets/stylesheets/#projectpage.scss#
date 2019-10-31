@@ -1,0 +1,39 @@
+// Place all the styles related to the projectpage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#project-list{
+    display:block;
+               
+
+}
+
+#list-container {
+    width: 400px;
+    height: 100px;
+    margin:0;
+    
+}
+
+
+#container{
+    width:400px;
+    margin:0 auto;
+    padding: 0;
+}
+
+#project-ul{
+    padding:0;
+}
+
+h3{
+    text-align:center;
+}
+p{
+    text-align:center;
+}
+
+.sneaky_form{
+    
+}
+
+
