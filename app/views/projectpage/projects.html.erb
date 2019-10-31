@@ -11,19 +11,5 @@
 </ul>
 </div>
 
-<div class="sneaky_form">
-  <div class="sneakier_form">
-    <%= form_for(@project) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-
-      <%= f.label :date %>
-      <%= f.text_field :date %>
-
-      <%= f.label :description %>
-      <%= f.text_area(:description, size: '50x10' %>
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
+<%= button_to "Add Project", add_projects_add_path, :method => "get"%>
 
