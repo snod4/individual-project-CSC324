@@ -1,0 +1,20 @@
+class AddProjectsController < ApplicationController
+  def add
+    @added = ProjectInfo.new
+  end
+
+  def create
+    @added = ProjectInfo.new(project_params)
+    if @added.save
+      # Handle a successful save.
+    else
+      render 'new'
+    end
+  end
+
+  private
+
+    def project_params
+      params.require(:project_info).permit(:name, :date, :description)
+    end
+end
