@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
   <head>
     <title>IndividualProject</title>
     <%= csrf_meta_tags %>
@@ -20,7 +20,8 @@
 
                           <%
           if yield(:pageName).eql? "projects" %>
-      <li id = "projectPageButton"><%= link_to(image_tag("add2.png", class: "add_button"), add_projects_add_path,  :method => :get) %></li>
+      <li id = "projectPageButton"><%= link_to(image_tag("add2.png", class:
+      "add_button", alt: "Add Project"), add_projects_add_path,  :method => :get) %></li>
           </ul>
 
         <%end%>
