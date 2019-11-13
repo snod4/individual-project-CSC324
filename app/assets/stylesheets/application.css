@@ -59,7 +59,7 @@ h1{
 **/
 
 .addButton{
-    filter: invert();
+    filter: invert(100%);
 
 }
 #projectPageButton{
