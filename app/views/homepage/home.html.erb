@@ -1,4 +1,28 @@
-<h1>Welcome!</h1>
-<p>This is me</p>
-<%= image_tag("me.jpg",class:"myPic", alt: "My face is displayed here") %>
+<% provide(:title,"Home")%>
+<div class = "black-div">
+  <h1 id = "name">Chase Snodgrass</div>  
+</div>
+<div class="contents">
+  <div>
+    <%= image_tag("me2.jpg",class:"myPic", alt: "My face is displayed here")%>
+   </div>
+  <div id="text-div">
+    <div id="text-div1">
+      <h2 class="info-header">A Little About Me</h2>
+      <p class="content-text">I'm currently a student at Grinnell College in
+        the oh-so lovely state of Iowa. I'd say go Hawkeyes, but, being from
+        Nebraska, that's a no-go. <br><br> I'm a Computer Science and Physics
+        double major that enjoys dabbling in the not-so-STEM-related fields at
+        times, hence the liberal arts education.</p>
+    </div>
+    <div id="text-div2">
+      <h2 class="info-header">Fun Facts</h3> 
+      <p class="content-text">Well, fun facts are always hard. In my
+      opinion, it's one of the worst
+      ice-breakers <br> <br> To list a few, I was born on Halloween. I used to
+      skateboard. I once hit the bullseye three times in a row using a bow and arrow.</p>
+    </div>
+  </div>
+</div>
+
 

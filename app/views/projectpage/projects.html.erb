@@ -1,12 +1,13 @@
 <% provide(:pageName,"projects") %>
+<% provide(:title,"Projects")%>
 
 <h1>Projects</h1>
 <div id = "container">
 <ul id = "project-ul"><% @projects.each do |data|%>
   <li id = "project-list">
    <div id = "list-container">
-   <h2><%="#{data.name} -- #{data.date}"%></h3>
-   <p><%= data.description %></p>
+   <h2 class = "project-header"><%="#{data.name} -- #{data.date}"%></h3>
+   <p class="project-text"><%= data.description %></p>
    </div>
   </li>
   <% end %>

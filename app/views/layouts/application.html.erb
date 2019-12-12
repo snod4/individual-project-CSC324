@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-    <title>IndividualProject</title>
+    <title><%= yield(:title)%></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,7 +16,7 @@
           <ul>
             <li class = "links"><%= link_to "Home",   '/' %></li>
             <li class = "links"><%= link_to "Projects",   '/project_infos' %></li>
-            <li class = "links"><%= link_to "About Me", '#' %></li>
+     
 
                           <%
           if yield(:pageName).eql? "projects" %>
@@ -29,8 +29,12 @@
       
       </div>
     </header>
-    <div class = "contents">
-      <%= yield %>
-    <div>
+    <%= yield %>
+
+    <footer id = "footer">
+      <p class="footer-text">Chase Snodgrass</p>
+      <p class="footer-text">Contact information: <a href="mailto:csnodgrass233@gmail.com">csnodgrass233@gmail.com</a>.</p>
+    </footer>
+  
   </body>
 </html>
